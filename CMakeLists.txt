@@ -9,10 +9,10 @@ project(ouster_example VERSION 20220608)
 # ==== Options ====
 option(CMAKE_POSITION_INDEPENDENT_CODE "Build position independent code." ON)
 option(BUILD_SHARED_LIBS "Build shared libraries." OFF)
-option(BUILD_PCAP "Build pcap utils." OFF)
+option(BUILD_PCAP "Build pcap utils." ON)
 option(BUILD_TESTING "Build tests" OFF)
 option(BUILD_VIZ "Build Ouster visualizer." ON)
-option(BUILD_EXAMPLES "Build C++ examples" OFF)
+option(BUILD_EXAMPLES "Build C++ examples" ON)
 
 # when building as a top-level project and not as conan library
 if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
